@@ -37,14 +37,13 @@ const Navbar = () => {
   return (
     <div className="mt-20">
       <header className="bg-gradient-to-r from-blue-500 to-indigo-600 shadow-md fixed w-full top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
 
-          
-          <h1 className="text-white text-2xl font-bold">
+          <h1 className="text-white text-xl sm:text-2xl font-bold truncate max-w-[180px] sm:max-w-none">
             {settingData.siteName}
           </h1>
 
-          
+
           <nav className="hidden md:flex gap-6 text-white font-medium">
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
@@ -53,7 +52,7 @@ const Navbar = () => {
             <Link to="/contactus">Contact Us</Link>
           </nav>
 
-          
+
           <div className="hidden md:block relative">
 
             {user ? (
